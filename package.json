@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "pnpm install && echo \"All ready!\"",
+    "build": "pnpm --filter frontend build",
     "lf": "pnpm --filter frontend run dev"
   }
 }
