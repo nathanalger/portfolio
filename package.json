@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/nathanalger/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/nathanalger/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanalger/portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Nathan Alger",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "setup": "pnpm install && echo \"All ready!\"",
+    "lf": "pnpm --filter frontend run dev"
+  }
+}
