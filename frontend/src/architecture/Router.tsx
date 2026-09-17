@@ -9,6 +9,7 @@ const router = createBrowserRouter([
     //errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> }, // Handles exact "/" path
+      { path: "health-test", element: <>OK</> },
 
       // samples
       //{ path: "about", element: <About /> },
