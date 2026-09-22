@@ -1,9 +1,12 @@
 import Router from "./Router";
+import ThemeRoot from "./ThemeRoot";
 
 const Provider = () => {
   return (
     <>
-      <Router />
+      <ThemeRoot>
+        <Router />
+      </ThemeRoot>
     </>
   );
 };
