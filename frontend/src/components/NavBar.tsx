@@ -56,7 +56,7 @@ const NavBar = () => {
           justifyContent: "space-between",
           width: "100%",
           height: 65,
-          px: 2,
+          px: 4,
           border: 0,
           borderBottom: (t) => `1px solid ${t.palette.text.primary}`,
           bgcolor: (t) =>
