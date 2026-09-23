@@ -1,7 +1,17 @@
 import { Box, Button, IconButton, Typography } from "@mui/joy";
 import { useNavigate } from "react-router";
-import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
-import { EmailLink, GithubLink, LinkedInLink } from "../globals/Socials";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaInstagram,
+} from "react-icons/fa";
+import {
+  EmailLink,
+  GithubLink,
+  InstagramLink,
+  LinkedInLink,
+} from "../globals/Socials";
 import { useDevice } from "../hook/useDevice";
 
 const HeroHeader = () => {
@@ -162,6 +172,25 @@ const HeroHeader = () => {
             }}
           >
             <FaLinkedinIn />
+          </IconButton>
+
+          <IconButton
+            component="a"
+            href={InstagramLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            color="neutral"
+            aria-label="Instagram"
+            sx={{
+              transition: "transform 0.2s, box-shadow 0.2s",
+              "&:hover": {
+                transform: "translateY(-2px)",
+                boxShadow: "md",
+              },
+            }}
+          >
+            <FaInstagram />
           </IconButton>
 
           <IconButton
