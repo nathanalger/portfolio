@@ -26,6 +26,7 @@ const HeroHeader = () => {
           textAlign: "center",
           position: "relative",
           zIndex: 1,
+          transform: "translateY(-3vh)",
         }}
       >
         <Typography
