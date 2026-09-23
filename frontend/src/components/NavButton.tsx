@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/joy";
 import type { SxProps } from "@mui/joy/styles/types";
 import type { ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router";
+import { useDevice } from "../hook/useDevice";
 
 const NavButtonBaseSx: SxProps = {
   position: "relative",
@@ -52,6 +53,7 @@ const NavButton = ({
 
   onClick?: () => void;
 }) => {
+  const { isMobile } = useDevice();
   const loc = useLocation();
   const navigate = useNavigate();
 
@@ -70,9 +72,15 @@ const NavButton = ({
       sx={{
         ...NavButtonBaseSx,
 
-        ...(active && {
-          "--nav-indicator-height": "3px",
-        }),
+        ...(active &&
+          !isMobile && {
+            "--nav-indicator-height": "3px",
+          }),
+
+        ...(active &&
+          isMobile && {
+            bgcolor: (t) => t.palette.background.level1,
+          }),
       }}
     >
       <Typography>{children}</Typography>

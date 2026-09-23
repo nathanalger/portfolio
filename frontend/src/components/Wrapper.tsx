@@ -1,26 +1,54 @@
-import { Box } from "@mui/joy";
+import { Box, useColorScheme } from "@mui/joy";
 import { Outlet } from "react-router";
-import NavButton from "./NavButton";
+import NavBar from "./NavBar";
 
 const Wrapper = () => {
+  const { mode, systemMode } = useColorScheme();
+
+  const m = mode == "system" ? systemMode : mode;
+
   return (
     <Box
       sx={{
-        backgroundColor: (t) => t.palette.background.backdrop,
+        minHeight: "100dvh",
+        background:
+          m == "dark"
+            ? (t) => `
+      radial-gradient(
+        circle at 15% 20%,
+        color-mix(in srgb, ${t.palette.primary[500]} 16%, transparent),
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 85% 80%,
+        color-mix(in srgb, ${t.palette.primary[500]} 14%, transparent),
+        transparent 35%
+      )
+    `
+            : undefined,
+        backgroundRepeat: "repeat-y",
       }}
     >
-      {/* Navbar */}
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
+          position: "sticky",
+          top: 0,
+          zIndex: 1000,
         }}
       >
-        <NavButton routeKey="home">Home</NavButton>
-        <NavButton routeKey="projects">Projects</NavButton>
+        <NavBar />
       </Box>
 
-      <Outlet />
+      <Box
+        sx={{
+          maxWidth: "1200px",
+          mx: "auto",
+          width: "100%",
+          px: { xs: 2, md: 3 },
+        }}
+      >
+        <Outlet />
+      </Box>
     </Box>
   );
 };
