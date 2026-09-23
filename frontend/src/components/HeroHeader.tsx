@@ -1,5 +1,8 @@
-import { Box, Button, Typography } from "@mui/joy";
+import { Box, Button, IconButton, Typography } from "@mui/joy";
 import { useNavigate } from "react-router";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+import { EmailLink, GithubLink, LinkedInLink } from "../globals/Socials";
+
 const HeroHeader = () => {
   const navigate = useNavigate();
   return (
@@ -110,6 +113,70 @@ const HeroHeader = () => {
           >
             About me
           </Button>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 1.5,
+            mt: 5,
+          }}
+        >
+          <IconButton
+            component="a"
+            href={GithubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            color="neutral"
+            aria-label="GitHub"
+            sx={{
+              transition: "transform 0.2s, box-shadow 0.2s",
+              "&:hover": {
+                transform: "translateY(-2px)",
+                boxShadow: "md",
+              },
+            }}
+          >
+            <FaGithub />
+          </IconButton>
+
+          <IconButton
+            component="a"
+            href={LinkedInLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            color="neutral"
+            aria-label="LinkedIn"
+            sx={{
+              transition: "transform 0.2s, box-shadow 0.2s",
+              "&:hover": {
+                transform: "translateY(-2px)",
+                boxShadow: "md",
+              },
+            }}
+          >
+            <FaLinkedinIn />
+          </IconButton>
+
+          <IconButton
+            component="a"
+            href={`mailto:${EmailLink}`}
+            variant="outlined"
+            color="neutral"
+            aria-label="Email"
+            sx={{
+              transition: "transform 0.2s, box-shadow 0.2s",
+              "&:hover": {
+                transform: "translateY(-2px)",
+                boxShadow: "md",
+              },
+            }}
+          >
+            <FaEnvelope />
+          </IconButton>
         </Box>
       </Box>
       <Box
