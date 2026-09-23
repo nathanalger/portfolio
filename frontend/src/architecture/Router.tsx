@@ -1,6 +1,7 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, redirect, RouterProvider } from "react-router";
 import Home from "../pages/Home";
 import Wrapper from "../components/Wrapper";
+import Projects from "../pages/Projects";
 
 const router = createBrowserRouter([
   {
@@ -8,12 +9,13 @@ const router = createBrowserRouter([
     element: <Wrapper />, // wrapper
     //errorElement: <NotFound />,
     children: [
-      { index: true, element: <Home /> }, // Handles exact "/" path
+      { index: true, element: <Home /> },
       { path: "health-test", element: <>OK</> },
-
-      // samples
-      //{ path: "about", element: <About /> },
-      //{ path: "user/:userId", element: <UserProfile /> },
+      { path: "projects", element: <Projects /> },
+      {
+        path: "home",
+        loader: () => redirect("/"),
+      },
     ],
   },
 ]);
