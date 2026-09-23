@@ -12,8 +12,8 @@ const Header = ({
     <Box
       sx={{
         textAlign: "center",
-        mt: 3,
-        mb: 6,
+        mt: 5,
+        mb: 8,
       }}
     >
       <Typography
@@ -21,10 +21,9 @@ const Header = ({
         sx={{
           fontSize: { xs: "2.5rem", sm: "5rem", md: "7rem" },
           lineHeight: 0.95,
-          letterSpacing: "-0.055em",
           fontWeight: 800,
-          mb: 3,
-          textTransform: "uppercase",
+          mb: 5,
+          //textTransform: "uppercase",
         }}
       >
         {title}
