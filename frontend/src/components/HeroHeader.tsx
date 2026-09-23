@@ -2,9 +2,11 @@ import { Box, Button, IconButton, Typography } from "@mui/joy";
 import { useNavigate } from "react-router";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { EmailLink, GithubLink, LinkedInLink } from "../globals/Socials";
+import { useDevice } from "../hook/useDevice";
 
 const HeroHeader = () => {
   const navigate = useNavigate();
+  const { isMobile } = useDevice();
   return (
     <Box
       sx={{
@@ -198,12 +200,14 @@ const HeroHeader = () => {
           },
         }}
       >
-        <Typography
-          level="body-xs"
-          sx={{ letterSpacing: "0.15em", textTransform: "uppercase" }}
-        >
-          Scroll
-        </Typography>
+        {!isMobile && (
+          <Typography
+            level="body-xs"
+            sx={{ letterSpacing: "0.15em", textTransform: "uppercase" }}
+          >
+            Scroll
+          </Typography>
+        )}
         <Box
           sx={{
             width: 24,
