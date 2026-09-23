@@ -6,7 +6,7 @@ import Projects from "../pages/Projects";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Wrapper />, // wrapper
+    element: <Wrapper />,
     //errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/joy";
+import { Box, Card, Typography } from "@mui/joy";
 import type { ReactNode } from "react";
 
 const InfoBox = ({
@@ -8,10 +8,14 @@ const InfoBox = ({
   title: string;
   children: ReactNode;
 }) => {
-  <Box>
-    <Typography level="h2">{title}</Typography>
-    <Box>{children}</Box>
-  </Box>;
+  return (
+    <Card sx={{ mb: 4 }}>
+      <Typography level="h2" sx={{ mb: 1 }}>
+        {title}
+      </Typography>
+      <Box>{children}</Box>
+    </Card>
+  );
 };
 
 export default InfoBox;

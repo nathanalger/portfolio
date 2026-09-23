@@ -13,12 +13,13 @@ const Wrapper = () => {
       <Box
         sx={{
           display: "flex",
-          gap: 0,
+          justifyContent: "center",
         }}
       >
         <NavButton routeKey="home">Home</NavButton>
         <NavButton routeKey="projects">Projects</NavButton>
       </Box>
+
       <Outlet />
     </Box>
   );
