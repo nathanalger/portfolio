@@ -107,7 +107,7 @@ const NavBar = () => {
               alignItems: "center",
               justifyContent: "space-between",
               height: 65,
-              px: 2,
+              px: 4,
               borderBottom: (t) => `1px solid ${t.palette.text.primary}`,
             }}
           >
