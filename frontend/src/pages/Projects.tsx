@@ -58,9 +58,7 @@ const Projects = () => {
           }}
         >
           While some projects are still in development, each demonstrates my
-          capabilities and approach to software development.While some projects
-          are still in development, each demonstrates my capabilities and
-          approach to software development.
+          capabilities and approach to software development.
         </Typography>
         <Grid container xs={12} spacing={2}>
           {GithubProjects.map((p) => {
