@@ -22,10 +22,10 @@ const GithubProjects: GithubProject[] = [
     imageUrl: "/rv64i-img.png",
   },
   {
-    link: "https://github.com/nathanalger/plus45",
+    link: "https://www.plus45.fit/",
     title: "Plus45 Fitness Management",
     description:
-      "A full-featured fitness management suite built for individual athletes and teams. Fully functional, with deployment planned for the future.",
+      "A full-featured fitness management suite built for individual athletes and teams. Fully functional and deployed.",
     tags: "Postgres,React,TS",
     imageUrl: "/plus45-img.png",
   },
