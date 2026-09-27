@@ -4,6 +4,10 @@ import mammoth from "mammoth";
 import * as cheerio from "cheerio";
 import type { Element } from "domhandler";
 
+/**
+ * Disclaimer: This was absolutely written by AI. Not that I couldn't do this, I just really did not want to.
+ */
+
 interface Education {
   institution: string;
   location: string;
