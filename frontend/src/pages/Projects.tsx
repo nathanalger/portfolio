@@ -145,7 +145,10 @@ const Projects = () => {
                           {p.title}
                         </Link>
                       </Typography>
-                      <Typography level="body-sm" sx={{ mb: 1.5 }}>
+                      <Typography
+                        level="body-sm"
+                        sx={{ mb: 1.5, fontSize: isMobile ? ".8rem" : "1rem" }}
+                      >
                         {p.description}
                       </Typography>
                       <Box
