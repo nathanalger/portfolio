@@ -1,0 +1,88 @@
+{
+  "education": [
+    {
+      "institution": "Michigan Technological University",
+      "location": "Houghton, Michigan",
+      "degree": "BS, Computer Engineering",
+      "gpa": "3.5",
+      "expectedGraduation": "Apr 2028"
+    }
+  ],
+  "skills": [
+    "C/C++",
+    "C#",
+    "TypeScript",
+    "JavaScript",
+    "STM32",
+    "Microcontrollers",
+    "Embedded Systems",
+    "React",
+    "Vite",
+    "Express",
+    "PostgreSQL",
+    "AWS",
+    "Computer Hardware Repair",
+    "Hardware Diagnosis"
+  ],
+  "experience": [
+    {
+      "organization": "Creative Mines",
+      "title": "Software Development Intern",
+      "location": "Hancock, Michigan",
+      "startDate": "Oct 2024",
+      "endDate": "Aug 2025",
+      "bullets": [
+        "Contributed to the design and development of Runway, a business relationship management application, utilizing TypeScript, React, Vite, Express, and PostgreSQL.",
+        "Collaborated in small teams to refine features, continuously improving user experience through iterative peer feedback and testing.",
+        "Assisted in maintaining production and development infrastructure on Amazon Web Services, ensuring maintainability and reliability."
+      ]
+    },
+    {
+      "organization": "Affordable Computer Services",
+      "title": "Technician",
+      "location": "Fenton, Michigan",
+      "startDate": "Nov 2020",
+      "endDate": "Aug 2022",
+      "bullets": [
+        "Maintained a professional and polite manner while assisting customers online and on-call, assisting them to solve problems, upholding the company’s positive reputation in the community.",
+        "Worked with a small team of employees to properly diagnose multiple computers accurately, quote repair costs, and finish the repairs all within a timely manner."
+      ]
+    }
+  ],
+  "involvement": [
+    {
+      "organization": "Aeronautics and Rocketry Enterprise - HPR",
+      "title": "Member",
+      "location": "Michigan Technological University",
+      "startDate": "Aug 2026",
+      "endDate": "Present",
+      "bullets": [
+        "Collaborate on the development of high-powered rocket avionics by defining system requirements, evaluating design constraints, and outlining hardware integration and testing.",
+        "Develop embedded systems in C++ using STM32-family microcontrollers alongside STM libraries to measure environmental factors with sensors and collect, process, and interpret real-time flight data.",
+        "Research and evaluate microcontroller and sensor solutions for avionics applications, contributing to the design of reliable and efficient data acquisition and event management."
+      ]
+    },
+    {
+      "organization": "Sound & Lighting Services",
+      "title": "Jr. Technician",
+      "location": "Michigan Technological University",
+      "startDate": "Sept 2026",
+      "endDate": "Present",
+      "bullets": [
+        "Support the setup and operation of audio and lighting systems for campus events, working with a team to load, transport, assemble, and configure equipment according to client requirements.",
+        "Assist with live event production and technical troubleshooting, monitoring equipment throughout events and completing teardown and equipment organization afterward."
+      ]
+    },
+    {
+      "organization": "Loose Senior Center",
+      "title": "Senior Tech Support Volunteer",
+      "location": "Linden, Michigan",
+      "startDate": "Aug 2023",
+      "endDate": "2024",
+      "bullets": [
+        "Provided patient and clear technical support to seniors in the local community, helping diagnose and resolve technology issues.",
+        "Managed time by both educating seniors on relevant topics about technology while also solving their problems, all within a time frame that allows all who need it to be assisted."
+      ]
+    }
+  ]
+}

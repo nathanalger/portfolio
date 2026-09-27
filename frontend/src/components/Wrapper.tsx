@@ -1,7 +1,7 @@
 import { Box, useColorScheme } from "@mui/joy";
 import { Outlet } from "react-router";
 import NavBar from "./NavBar";
-import Footer from "./Foooter";
+import Footer from "./Footer";
 
 const Wrapper = () => {
   const { mode, systemMode } = useColorScheme();

@@ -1,0 +1,1 @@
+pnpm tsx parse-resume.ts resume.docx ../src/data/resume.json
